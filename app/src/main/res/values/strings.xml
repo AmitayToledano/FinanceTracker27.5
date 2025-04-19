@@ -1,3 +1,57 @@
 <resources>
     <string name="app_name">FinanceTracker</string>
+    <string name="category_name_hint">Category Name</string>
+    <string name="save_category">Save Category</string>
+    <string name="currency_name_hint">Currency Name</string>
+    <string name="currency_symbol_hint">Currency Symbol</string>
+    <string name="currency_rate_hint">55</string>
+    <string name="save_currency">Save Currency</string>
+    <string name="group_name_hint">Group Name</string>
+    <string name="group_description_hint">Group Description</string>
+    <string name="save_group">Save Group</string>
+    <string name="add_category">Add Category</string>
+    <string name="add_currency">Add Currency</string>
+    <string name="add_group">Add Group</string>
+    <string name="view_all_transactions"> view all transactions </string>
+    <string name="add_new_transaction"> add new transaction </string>
+    <string name="manage_section_title"> manage section title </string>
+    <string name="manage_categories"> manage categories </string>
+    <string name="manage_groups"> manage groups </string>
+    <string name="manage_currencies"> manage currencies </string>
+    <string name="tools_section_title"> tools section title </string>
+    <string name="view_reports"> view reports </string>
+    <string name="settings"> settings </string>
+
+    <string name="report_summary_title"> report summary title </string>
+    <string name="report_total_spending"> report total spending </string>
+    <string name="report_income_vs_expense"> report income vs expense </string>
+    <string name="report_charts_title"> report charts title </string>
+    <string name="report_expenses_by_category"> report expenses by category </string>
+    <string name="placeholder_pie_chart"> placeholder pie chart </string>
+    <string name="report_monthly_summary"> report monthly summary </string>
+    <string name="placeholder_bar_chart"> placeholder bar chart </string>
+    <string name="label_title">Title</string>
+    <string name="label_amount">Amount</string>
+    <string name="label_date">Date</string>
+    <string name="label_category">Category</string>
+    <string name="label_group">Group</string>
+    <string name="label_description">Description</string>
+    <!-- General Settings -->
+    <string name="setting_general_title">General</string>
+    <string name="setting_default_currency">Default Currency</string>
+
+    <!-- Appearance Settings -->
+    <string name="setting_appearance_title">Appearance</string>
+    <string name="setting_dark_mode">Dark Mode</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_view_details">View Details</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="not_set">not_set</string>
+    <string name="no_description">no_description</string>
+    <string name="delete_transaction_title">delete_transaction_title</string>
+    <string name="delete_transaction_confirmation">delete_transaction_confirmation</string>
+    <string name="transaction_deleted">transaction_deleted</string>
+    <string name="add_transaction">add_transaction</string>
 </resources>
