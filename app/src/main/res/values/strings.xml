@@ -54,4 +54,12 @@
     <string name="delete_transaction_confirmation">delete_transaction_confirmation</string>
     <string name="transaction_deleted">transaction_deleted</string>
     <string name="add_transaction">add_transaction</string>
+    <string name="transaction_name_hint">transaction name hint</string>
+    <string name="transaction_symbol_hint">transaction symbol hint</string>
+    <string name="transaction_rate_hint">transaction rate hint</string>
+    <string name="save_transaction">save transaction</string>
+    <string name="transaction_title">transaction title</string>
+    <string name="transaction_amount">transaction amount</string>
+    <string name="transaction_category">transaction category</string>
+    <string name="transaction_date">transaction date</string>
 </resources>

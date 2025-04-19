@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (id == R.id.buttonViewTransactions) {
             intent = new Intent(this, TransactionListActivity.class); // Existing Activity
         } else
-//            if (id == R.id.buttonAddTransaction) {
-//            intent = new Intent(this, AddTransactionActivity.class); // Existing Activity
-//        } else
+            if (id == R.id.buttonAddTransaction) {
+            intent = new Intent(this, AddEditTransactionActivity.class); // Existing Activity
+        } else
         if (id == R.id.buttonManageCategories) {
             intent = new Intent(this, CategoryListActivity.class); // New Activity
         } else if (id == R.id.buttonManageGroups) {
