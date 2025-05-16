@@ -66,6 +66,7 @@
     <string name="title_currencies">Currencies</string>
     <string name="title_groups">Groups</string>
 
-
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 
 </resources>

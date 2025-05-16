@@ -4,7 +4,6 @@
     <color name="colorPrimary">#1f90ed</color>
     <color name="colorPrimaryVariant">#00574B</color>
     <color name="colorOnPrimary">#FFFFFF</color>
-    <color name="colorSecondary">#22ADEF</color>
 
     <!-- Other colors -->
     <color name="black">#FF000000</color>

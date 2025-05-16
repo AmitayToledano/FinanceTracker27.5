@@ -4,13 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View; // Import View
 import android.widget.Button; // Or MaterialButton if using Material Components theme extensively
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.material.button.MaterialButton; // Example using MaterialButton
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener { // Implement OnClickListener
 
     private Toolbar toolbar;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private MaterialButton buttonViewTransactions, buttonAddTransaction;
     private MaterialButton buttonManageCategories, buttonManageGroups, buttonManageCurrencies;
     private MaterialButton buttonViewReports, buttonOpenSettings;
@@ -21,13 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         // Setup Toolbar
-        toolbar = findViewById(R.id.toolbar_main);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(R.string.app_name); // Use app name or a dashboard title
         }
         // No back button needed on main screen usually
-
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
         // Find Navigation Buttons
         buttonViewTransactions = findViewById(R.id.buttonViewTransactions);
         buttonAddTransaction = findViewById(R.id.buttonAddTransaction);
@@ -46,6 +54,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonViewReports.setOnClickListener(this);
         //buttonOpenSettings.setOnClickListener(this);
 
+
+        // Create an ActionBarDrawerToggle to handle
+        // the drawer's open/close state
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
+
+        // Add the toggle as a listener to the DrawerLayout
+        drawerLayout.addDrawerListener(toggle);
+
+        // Synchronize the toggle's state with the linked DrawerLayout
+        toggle.syncState();
         // You could also add summary information here (e.g., current balance)
         // fetching it from the database (requires background task).
     }
