@@ -67,7 +67,7 @@ public class AddEditCategoryActivity extends AppCompatActivity {
 
         // Set title and load data if editing
         if (categoryId != DEFAULT_CATEGORY_ID) {
-            setTitle("R.string.edit_category"); // Define in strings.xml
+            setTitle("Edit Category"); // Define in strings.xml
             loadCategoryData();
         } else {
             setTitle(R.string.add_category); // Define in strings.xml

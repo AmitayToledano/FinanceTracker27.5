@@ -13,6 +13,9 @@ import java.util.List;
 @Dao
 public interface GroupDao {
 
+    @Query("SELECT * FROM `group_`") // ודא גם ששם הטבלה נכון
+    List<Group> getAllGroups();
+
     @Query("SELECT * FROM group_")
     List<Group> getAll();
 

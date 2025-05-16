@@ -4,7 +4,7 @@
     <string name="save_category">Save Category</string>
     <string name="currency_name_hint">Currency Name</string>
     <string name="currency_symbol_hint">Currency Symbol</string>
-    <string name="currency_rate_hint">55</string>
+    <string name="currency_rate_hint">Currency Value By ILS</string>
     <string name="save_currency">Save Currency</string>
     <string name="group_name_hint">Group Name</string>
     <string name="group_description_hint">Group Description</string>
@@ -23,8 +23,8 @@
     <string name="settings"> settings </string>
 
     <string name="report_summary_title"> report summary title </string>
-    <string name="report_total_spending"> report total spending </string>
-    <string name="report_income_vs_expense"> report income vs expense </string>
+    <string name="total_expenses_on_group">Total Expenses On Group</string>
+    <string name="monthly_expenses_on_group">Monthly Expenses On Group: </string>
     <string name="report_charts_title"> report charts title </string>
     <string name="report_expenses_by_category"> report expenses by category </string>
     <string name="placeholder_pie_chart"> placeholder pie chart </string>
@@ -62,4 +62,10 @@
     <string name="transaction_amount">transaction amount</string>
     <string name="transaction_category">transaction category</string>
     <string name="transaction_date">transaction date</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_currencies">Currencies</string>
+    <string name="title_groups">Groups</string>
+
+
+
 </resources>

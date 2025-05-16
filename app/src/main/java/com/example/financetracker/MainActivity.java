@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonManageGroups = findViewById(R.id.buttonManageGroups);
         buttonManageCurrencies = findViewById(R.id.buttonManageCurrencies);
         buttonViewReports = findViewById(R.id.buttonViewReports);
-        buttonOpenSettings = findViewById(R.id.buttonOpenSettings);
+        //buttonOpenSettings = findViewById(R.id.buttonOpenSettings);
 
         // Set Click Listeners
         buttonViewTransactions.setOnClickListener(this);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonManageGroups.setOnClickListener(this);
         buttonManageCurrencies.setOnClickListener(this);
         buttonViewReports.setOnClickListener(this);
-        buttonOpenSettings.setOnClickListener(this);
+        //buttonOpenSettings.setOnClickListener(this);
 
         // You could also add summary information here (e.g., current balance)
         // fetching it from the database (requires background task).
@@ -74,9 +74,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent = new Intent(this, CurrencyListActivity.class); // New Activity
         } else if (id == R.id.buttonViewReports) {
             intent = new Intent(this, ReportsActivity.class); // New Activity
-        } else if (id == R.id.buttonOpenSettings) {
+        } /*else if (id == R.id.buttonOpenSettings) {
             intent = new Intent(this, SettingsActivity.class); // New Activity
-        }
+        }*/
 
         // Start the activity if an intent was created
         if (intent != null) {

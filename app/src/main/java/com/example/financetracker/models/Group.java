@@ -16,5 +16,9 @@ public class Group {
         return name;
     }
 
+    public int getId() {
+        return id;
+    }
+
 
 }

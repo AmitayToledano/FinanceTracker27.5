@@ -46,7 +46,7 @@ public class CategoryListActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar_categories);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("R.string.title_categories"); // Define in strings.xml
+            getSupportActionBar().setTitle(R.string.title_categories); // Define in strings.xml
             getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Show back button
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }

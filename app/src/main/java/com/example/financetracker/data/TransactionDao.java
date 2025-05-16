@@ -38,4 +38,22 @@ public interface TransactionDao {
 
     @Delete
     void delete(Transaction transaction);
+
+    @Query("SELECT SUM(amount) FROM transactions WHERE groupId = :groupId AND amount < 0")
+    double getTotalSpendingForGroup(long groupId);
+
+    @Query("SELECT SUM(amount) FROM transactions WHERE groupId = :groupId AND amount > 0")
+    double getTotalIncomeForGroup(long groupId);
+
+    @Query("SELECT SUM(amount) FROM transactions WHERE amount < 0 AND strftime('%Y-%m', date / 1000, 'unixepoch') = strftime('%Y-%m', 'now')")
+    double getTotalSpendingForCurrentMonth();
+
+    @Query("SELECT SUM(amount) FROM transactions WHERE amount < 0 AND groupId = :groupId AND strftime('%Y-%m', date / 1000, 'unixepoch') = strftime('%Y-%m', 'now')")
+    double getTotalMonthlySpendingForGroup(long groupId);
+
+    @Query("SELECT * FROM transactions LIMIT 10")
+    List<Transaction> getSampleTransactions();
+
+
+
 }

@@ -31,6 +31,14 @@
             android:orientation="vertical"
             android:padding="16dp">
 
+            <Spinner
+                android:id="@+id/spinnerGroupFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                />
+
+
             <TextView
                 style="@style/TextAppearance.MaterialComponents.Headline6"
                 android:layout_width="match_parent"
@@ -53,7 +61,7 @@
                     style="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/report_total_spending"/> <TextView
+                    android:text="@string/total_expenses_on_group"/> <TextView
                 android:id="@+id/textViewTotalSpendingValue"
                 style="@style/TextAppearance.MaterialComponents.Headline5"
                 android:layout_width="wrap_content"
@@ -66,7 +74,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/report_income_vs_expense"/> <TextView
+                    android:text="@string/monthly_expenses_on_group"/>
+                <TextView
+
                 android:id="@+id/textViewIncomeVsExpenseValue"
                 style="@style/TextAppearance.MaterialComponents.Body1"
                 android:layout_width="wrap_content"
@@ -78,7 +88,7 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-            <TextView
+            <!-- <TextView
                 style="@style/TextAppearance.MaterialComponents.Headline6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -119,7 +129,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/placeholder_bar_chart"/> </FrameLayout>
+            android:text="@string/placeholder_bar_chart"/> </FrameLayout> -->
 
         </LinearLayout>
     </ScrollView>

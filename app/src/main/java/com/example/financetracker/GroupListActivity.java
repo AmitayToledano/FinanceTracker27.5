@@ -43,7 +43,7 @@ public class GroupListActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar_groups);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("R.string.title_groups"); // Define in strings.xml
+            getSupportActionBar().setTitle("Groups"); // Define in strings.xml
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }

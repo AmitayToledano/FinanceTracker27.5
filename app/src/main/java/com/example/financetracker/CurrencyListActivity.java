@@ -41,7 +41,7 @@ public class CurrencyListActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar_currencies);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("R.string.title_currencies"); // Define in strings.xml
+            getSupportActionBar().setTitle("Currencies"); // Define in strings.xml
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,13 +88,13 @@
             android:layout_marginBottom="4dp"
             android:text="@string/view_reports"
             app:icon="@drawable/ic_report"
-            /> <com.google.android.material.button.MaterialButton
+            /> <!--<com.google.android.material.button.MaterialButton
             android:id="@+id/buttonOpenSettings"
             style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/settings"
-            app:icon="@drawable/ic_settings" /> </LinearLayout>
+            app:icon="@drawable/ic_settings" />--> </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
